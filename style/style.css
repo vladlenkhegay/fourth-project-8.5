@@ -1,0 +1,279 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'TT Lakes';
+    background-color: #F8F8F8;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    font-weight: normal;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'TT Lakes';
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Medium.woff2') format('woff2'),
+        url('TTLakes-Medium.woff') format('woff'),
+        url('TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ................................................................ */
+
+.conteiner {
+    padding: 0px 15px;
+    width: 100%;
+    height: 56px;
+}
+
+.wrapper {
+    padding-top: 0px;
+    width: 100%;
+    min-height: 400px;
+}
+
+.main {
+    width: 1120px;
+    min-height: 325px;
+    margin: 0 auto;
+
+}
+
+.main__text p {
+    padding-left: 25px;
+}
+
+.main__text {
+    width: 100%;
+    height: 56px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.main__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 16px;
+    padding-top: 24px;
+}
+
+.main__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+    width: 240px;
+    height: 72px;
+    background-color: white;
+}
+
+.main__circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__next {
+    display: flex;
+    width: 135px;
+    height: 24px;
+}
+
+.main__hidden {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 16px;
+    column-gap: 40px;
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.main__dis {
+    display: none;
+}
+
+.main__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    width: 150px;
+    background-color: #F8F8F8;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+
+.main__hover:hover .main__dis {
+    display: block;
+}
+
+.main__items_2 {
+    display: block;
+}
+
+.main__items_3 {
+    display: none;
+}
+
+/* .swiper-slide {
+    display: flex !important;
+    width: 600px !important;
+    height: 100px;
+    ba
+} */
+
+.swiper-slide {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid aqua;
+    border-radius: 6px;
+
+    width: 240px;
+    height: 72px;
+    background-color: white;
+/* 
+    width: 300px;
+    background-color: #0eb3cd; */
+}
+
+.swiper-slide__img {
+    width: 300px;
+    height: 100px;
+    /* background-color: aqua; */
+}
+
+.swiper-slide .main__circle {
+    width: 100px;
+    height: 100px;
+}
+
+.swiper-slide .main__circle img {
+    width: 20px;
+    height: 20px;
+}
+
+.swiper.mySwiper {
+    display: none;
+    margin-top: 26px;
+}
+
+
+/* ................... */
+
+@media (max-width:768px) {
+    .main__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .main__items_2 {
+        display: none;
+    }
+
+    .main__items {
+        width: 325px;
+    }
+
+    .main__items_3 {
+        display: block;
+    }
+
+    .main__hidden {
+        width: 97%;
+        column-gap: 44px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main__hidden .main__items {
+        width: 327px;
+    }
+
+    .main__text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:320px) {
+    .main__grid {
+        display: none;
+    }
+    
+    .swiper.mySwiper {
+        display: block;
+    }
+
+    .swiper-slide {
+        width: 96% !important;
+    }
+
+    .main__hover {
+        display: none;
+    }
+
+    .main__text {
+        font-size: 70px;
+        padding-top: 100px;
+    }
+    
+    .main__text {
+        height: 300px;
+        padding-bottom: 80px;
+    }
+}
