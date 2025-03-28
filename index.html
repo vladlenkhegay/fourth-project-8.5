@@ -7,225 +7,394 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/styleaside.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <div class="conteiner">
+    <div class="flex">
+        <div>
             <main class="main">
-                <div class="main__text">
-                    <p>Ремонт техники различных брендов</p>
-                </div>
 
-                <div class="main__grid">
 
-                    <div class="main__items">
-                        <img src="image/1.png" alt="">
-                        <div class="main__circle">
-                            <img src="image/dropdown.png" alt="">
+                <section class="slider">
+                    <div class="slider__block-text">
+                        <div class="slider__content">
+                            <p>Ремонт техники различных брендов</p>
                         </div>
                     </div>
 
-                    <div class="main__items">
-                        <img src="image/2.png" alt="">
-                        <div class="main__circle">
-                            <img src="image/dropdown.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="main__items">
-                        <img src="image/3.png" alt="">
-                        <div class="main__circle">
-                            <img src="image/dropdown.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="main__items main__item_1">
-                        <img src="image/4.png" alt="">
-                        <div class="main__circle">
-                            <img src="image/dropdown.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="main__items main__item_1">
-                        <img src="image/5.png" alt="">
-                        <div class="main__circle">
-                            <img src="image/dropdown.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="main__items">
-                        <img src="image/6.png" alt="">
-                        <div class="main__circle">
-                            <img src="image/dropdown.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="main__items_2">
-                        <div class="main__items">
-                            <img src=" image/7.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main__items_2">
-                        <div class="main__items">
-                            <img src="image/8.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="image/1.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="image/2.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="image/3.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="image/4.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/5.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/6.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/7.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/8.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/1.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/2.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">                                <img class="swiper-slide__img" src="image/3.png" alt="">
-                            <div class="main__circle">
-                                <img src="image/dropdown.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <div class="main__hover">
-                    <div id="hiddenElement">
-                        <div class="main__hidden">
-                            <div class="main__items">
-                                <img src="image/1.png" alt="">
-                                <div class="main__circle">
-                                    <img src="image/dropdown.png" alt="">
+                    <!-- ......................... -->
+                    <div class="mobi-vir">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/9.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="main__items">
-                                <img src="image/2.png" alt="">
-                                <div class="main__circle">
-                                    <img src="image/dropdown.png" alt="">
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/10.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="main__items">
-                                <img src="image/3.png" alt="">
-                                <div class="main__circle">
-                                    <img src="image/dropdown.png" alt="">
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/11.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="main__items_3">
-                                <div class="main__items">
-                                    <img src=" image/7.png" alt="">
-                                    <div class="main__circle">
-                                        <img src="image/dropdown.png" alt="">
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/12.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/13.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/14.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/15.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/16.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brans brans_s">
+                                        <div class="brans__center">
+                                            <img src="image/9.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- ......................... -->
 
-                            <div class="main__items_3">
-                                <div class="main__items">
-                                    <img src="image/8.png" alt="">
-                                    <div class="main__circle">
+                    <div class="slider__block-position">
+                        <div class="slider__flex">
+                            <div class="brans">
+                                <div class="brans__center">
+                                    <img src="image/9.png" alt="">
+                                    <button class="brans__next">
                                         <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans">
+                                <div class="brans__center">
+                                    <img src="image/10.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans">
+                                <div class="brans__center">
+                                    <img src="image/11.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans">
+                                <div class="brans__center">
+                                    <img src="image/12.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans">
+                                <div class="brans__center">
+                                    <img src="image/13.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans">
+                                <div class="brans__center">
+                                    <img src="image/14.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans brans_hidden">
+                                <div class="brans__center">
+                                    <img src="image/15.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="brans brans_hidden">
+                                <div class="brans__center">
+                                    <img src="image/16.png" alt="">
+                                    <button class="brans__next">
+                                        <img src="image/dropdown.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="hiddenElement" class="slider__hidden" style="display: none;">
+                                <div class="slider__flex-hid">
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/9.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/10.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/11.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/12.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/13.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans">
+                                        <div class="brans__center">
+                                            <img src="image/14.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans brans__appir">
+                                        <div class="brans__center">
+                                            <img src="image/13.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="brans brans__appir">
+                                        <div class="brans__center">
+                                            <img src="image/14.png" alt="">
+                                            <button class="brans__next">
+                                                <img src="image/dropdown.png" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="main__items main__item_1">
-                                <img src="image/4.png" alt="">
-                                <div class="main__circle">
-                                    <img src="image/dropdown.png" alt="">
+                        <div class="slider__next">
+                            <button id="toggleButton" class="slider__btn">
+                                <img id="toggleIcon" src="image/icon.svg" alt="">
+                                <p id="toggleText">Показать все</p>
+                            </button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="remont">
+
+
+                    <div class="remont__appir" id="hiddenElement-remon">
+                        <div class="remont__hiden">
+                            <div class="remont__hiden-flex">
+                                <div class="remont__flex">
+                                    <p>Ремонт мониторов</p>
+                                    <div class="remont__item">
+                                        <button class="brans__next">
+                                            <img src="image/dropdown.png" alt="">
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-        
-                            <div class="main__items main__item_1">
-                                <img src="image/5.png" alt="">
-                                <div class="main__circle">
-                                    <img src="image/dropdown.png" alt="">
+
+                                <div class="remont__flex">
+                                    <p>Ремонт мониторов</p>
+                                    <div class="remont__item">
+                                        <button class="brans__next">
+                                            <img src="image/dropdown.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="remont__flex">
+                                    <p>Ремонт мониторов</p>
+                                    <div class="remont__item">
+                                        <button class="brans__next">
+                                            <img src="image/dropdown.png" alt="">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="main__btn">
-                        <img src="image/expand.png" alt="">
-                        <button style="width: 100px; background-color: #F8F8F8; border: none; margin-right: 20px;" id="toggleButton">
-                            <p style=" color: #1B1C21;" class="text">Показать все</p>
+                    <!-- ................ -->
+                    <!-- ....................... -->
+                        <button id="toggleButton-remon" class="slider__btn"></button>
+                        
+
+                </section>
+
+            </main>
+
+        </div>
+
+        <div class="recla__hidden"  id="menu1">
+            <div class="fon-2"></div>
+            <div class="aside__right">
+                <div class="recla">
+                    <div class="recla__conect">
+                        <p>Обратная связь</p>    
+                        <button class="recla__y">
+                            <a class="recla__x" href="" id="closeMenu-2">
+                                <img src="image/7.png" alt="">
+                            </a>
                         </button>
                     </div>
 
+                    <div class="recla__input">
+                        <input type="text" placeholder="Имя">
+                        <input type="tel" placeholder="Телефон">
+                        <input type="email" placeholder="Электронная почта">
+                        <textarea type="text" placeholder="Сообщение"></textarea>
+                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                    </div>
+                    
+                    <div class="recla__block">
+                        <button class="recla__btn">
+                            <p>ОТПРАВИТЬ</p>
+                            <img src="image/goside.png" alt="">
+                        </button>
+                    </div>
                 </div>
-
-
-
-
-            </main>
+            </div>
         </div>
+
+        <div class="recla__hidden2" id="menu2">
+            <div class="fon-2"></div>
+            <div class="aside__right">
+                <div class="recla">
+                    <div class="recla__conect">
+                        <p>Заказать звонок</p>    
+                        <button class="recla__y">
+                            <a class="recla__x" href="" id="closeMenu-2">
+                                <img src="image/7.png" alt="">
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="recla__input">
+                        <input type="tel" placeholder="Телефон">
+                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                    </div>
+                    
+                    <div class="recla__block">
+                        <button class="recla__btn">
+                            <p>ОТПРАВИТЬ</p>
+                            <img src="image/goside.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="js/app.js"></script>
-</body>
 
+</body>
 
 </html>
