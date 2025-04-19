@@ -794,7 +794,7 @@ div.offers__flex_none {
     position: absolute;
     width: 8px;
     height: 12px;
-    background-image: url(/image/next.png);
+    /* background-image: url("/image/next.png"); */
     background-size: 8px 12px;
     background-repeat: no-repeat;
     margin-left: 10px;
@@ -1006,7 +1006,7 @@ textarea {
     z-index: 11;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 340px) {
     .recla__y {
         position: absolute;
         z-index: 12;
@@ -1201,7 +1201,7 @@ textarea {
     }
 
     .slider__content {
-        width: 400px;
+        width: 100%;
     }
 
     .brans__appir {
@@ -1215,7 +1215,7 @@ textarea {
     }
 
     .slider__block-position {
-        width: 770px;
+        width: 100%;
     }
 
     .brans_hidden {
@@ -1285,7 +1285,7 @@ textarea {
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 800px) {
     .recla__y {
         position: absolute;
         z-index: 12;
@@ -1493,7 +1493,7 @@ textarea {
     }
 
     .slider__block-position {
-        width: 1102px;
+        width: 100%;
     }
 
     .brans {

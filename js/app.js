@@ -29,19 +29,19 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const openMenuLink = document.getElementById('openMenu');
-const closeMenuLink = document.getElementById('closeMenu');
-const menu1 = document.getElementById('menuaside');
+// const openMenuLink = document.getElementById('openMenu');
+// const closeMenuLink = document.getElementById('closeMenu');
+// const menu1 = document.getElementById('menuaside');
 
-openMenuLink.addEventListener('click', (event) => {
-    event.preventDefault();  // Чтобы страница не прыгала вверх
-    menu1.style.display = 'block';  // Показываем меню
-});
+// openMenuLink.addEventListener('click', (event) => {
+//     event.preventDefault();  // Чтобы страница не прыгала вверх
+//     menu1.style.display = 'block';  // Показываем меню
+// });
 
-closeMenuLink.addEventListener('click', (event) => {
-    event.preventDefault();  
-    menu1.style.display = 'none';  // Прячем меню
-});
+// closeMenuLink.addEventListener('click', (event) => {
+//     event.preventDefault();  
+//     menu1.style.display = 'none';  // Прячем меню
+// });
 
 // const openMenuLinkq = document.getElementById('openMenu-2');
 // const closeMenuLinkq = document.getElementById('closeMenu-2');
@@ -57,22 +57,22 @@ closeMenuLink.addEventListener('click', (event) => {
 //     menuq.style.display = 'none';  // Прячем меню
 // });
 
-function setupMenu(link1Id, link2Id, menuId) {
-    let menu = document.getElementById(menuId);
-    let isOpen = false; // Флаг состояния
+// function setupMenu(link1Id, link2Id, menuId) {
+//     let menu = document.getElementById(menuId);
+//     let isOpen = false; // Флаг состояния
 
-    function toggleMenu(event) {
-        event.preventDefault();
-        isOpen = !isOpen; // Переключаем флаг
-        menu.style.display = isOpen ? "block" : "none";
-    }
+//     function toggleMenu(event) {
+//         event.preventDefault();
+//         isOpen = !isOpen; // Переключаем флаг
+//         menu.style.display = isOpen ? "block" : "none";
+//     }
 
-    document.getElementById(link1Id).addEventListener("click", toggleMenu);
-    document.getElementById(link2Id).addEventListener("click", toggleMenu);
-}
+//     document.getElementById(link1Id).addEventListener("click", toggleMenu);
+//     document.getElementById(link2Id).addEventListener("click", toggleMenu);
+// }
 
-// Настраиваем первое меню
-setupMenu("link1", "link2", "menu1");
+// // Настраиваем первое меню
+// setupMenu("link1", "link2", "menu1");
 
-// Настраиваем второе меню
-setupMenu("link3", "link4", "menu2");
+// // Настраиваем второе меню
+// setupMenu("link3", "link4", "menu2");
