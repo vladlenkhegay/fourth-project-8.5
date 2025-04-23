@@ -1016,7 +1016,7 @@ textarea {
     }
 }
 
-@media (min-width: 420px) {
+@media (min-width: 430px) {
     .recla__y {
         position: absolute;
         z-index: 12;
