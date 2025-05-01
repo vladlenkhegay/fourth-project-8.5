@@ -1010,13 +1010,94 @@ textarea {
     z-index: 11;
 }
 
-@media (max-width: 430px) {
-    .flex {
-        display: block;
+.slider__hidden {
+    width: 1056px;
+}
+
+@media (max-width: 1054px) {
+    .brans_hidden {
+        display: none !important;
+    }
+
+    .slider__hidden {
+        width: 784px;
     }
 }
 
-@media (min-width: 430px) {
+@media (max-width: 796px) {
+    .slider__flex {
+        row-gap: 8px;
+        column-gap: 8px;
+    }
+    
+    .brans {
+        width: 200px !important;
+        height: 65px !important;
+    }
+
+    .brans__center {
+        width: 180px;
+    }
+
+    .slider__hidden {
+        width: 616px;
+    }
+
+    .slider__flex-hid {
+        row-gap: 8px;
+        column-gap: 8px;
+    }
+}
+
+@media (max-width: 620px) {    
+    .brans {
+        width: 150px !important;
+        height: 50px !important;
+    }
+    
+    .ima {
+        width: 65px;
+        height: 32px;
+    }
+
+    .brans__center {
+        width: 130px;
+    }
+
+    .brans__next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider__hidden {
+        width: 466px;
+    }
+}
+
+@media (max-width: 431px) {
+
+    .flex {
+        display: block;
+    }
+
+    .brans {
+        width: 240px !important;
+        height: 72px !important;
+    }
+
+    .brans__center {
+        width: 200px;
+    }
+
+    .brans__next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+@media (min-width: 431px) {
     .recla__y {
         position: absolute;
         z-index: 12;
@@ -1291,9 +1372,6 @@ textarea {
         left: -20px;
     }
 
-}
-
-@media (min-width: 430px) {
     .recla__y {
         position: absolute;
         z-index: 12;
@@ -1498,11 +1576,11 @@ textarea {
 
     .slider__flex-hid {
         width: 100%;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .slider__block-position {
-        width: 72%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1586,4 +1664,11 @@ textarea {
         display: none;
     }
 
+}
+
+@media (min-width: 1300px) {
+    .slider__flex  {
+        width: 1310px;
+        margin: 0 auto;
+    }
 }
